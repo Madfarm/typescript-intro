@@ -55,3 +55,22 @@ function iterateAndPrint(list: number[]): string {
 
 
 ## Anonymous Functions
+// No type annotations here, but TypeScript can spot the bug
+const names = ["Alice", "Bob", "Eve"];
+ 
+// Contextual typing for function
+names.forEach(function (s) {
+  console.log(s.toUppercase());
+});
+ 
+// Contextual typing also applies to arrow functions
+names.forEach((s) => {
+  console.log(s.toUppercase());
+});
+
+
+this will give an error even though you haven't expressed any type notation Typescript can pick up typing from the context
+
+this is called textual typing
+
+
