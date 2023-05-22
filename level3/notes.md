@@ -35,3 +35,18 @@ function printName(obj : {first: String; last?: String }): void {
 
 we need the question mark here to check for undefined
 
+
+## Union Types
+We can use a  | to define union types where a piece of data may be any of the union members
+
+only operations that can be used for every union member are valid
+like you can't use string methods if the type is number | string
+
+function letsGooTest(x: number | String): void {
+    console.log(x.toUpperCase())
+}
+
+this is not valid code because numbers don't have toUpperCase()
+
+to properly use that method, we'll have to check for which type the argument is before attempting the operation
+
