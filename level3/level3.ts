@@ -57,3 +57,5 @@ function learnCat(cat: Cat): Cat{
 
 
 let litNum: 6 | 7 | 8 = 6;
+
+let theFuck: 6 | string | false = "auth"

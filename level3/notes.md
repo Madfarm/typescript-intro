@@ -92,3 +92,21 @@ let x: 6 = 6;
 and they can be unionized
 
 let x: 6 | 7 | 8 = 7;
+
+
+literals can also be used in a union with non-literal types
+
+let x: 6 | string = "auto";
+
+
+when you assign something a value, typescript will infer the type based on that value
+when we need to force typescript to take an object as type literals we can use as const at the end
+
+const req = { url: "https://example.com", method: "GET" };
+handleRequest(req.url, req.method);
+Argument of type 'string' is not assignable to parameter of type '"GET" | "POST"'.
+
+
+change that to this,
+const req = { url: "https://example.com", method: "GET" } as const;
+handleRequest(req.url, req.method);
