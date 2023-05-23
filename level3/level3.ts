@@ -37,3 +37,20 @@ function printName(str: name): name {
 }
 
 // console.log(printName("catty"))
+
+interface Cat {
+    favFood: string,
+    age: number
+}
+
+let manny: Cat = {
+    favFood: "Lasaga",
+    age: 4
+}
+
+function learnCat(cat: Cat): Cat{
+    return cat
+}
+
+
+console.log(learnCat(manny))

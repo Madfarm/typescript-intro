@@ -58,6 +58,28 @@ type name = String;
 
 
 ## Interfaces
+Declares an object's type structure
 
+interface Dog {
+  property: type,
+  property: type
+}
 
+interfaces vs type aliases
+interfaces can be extended
 
+type Animal = {
+  name: string;
+}
+
+type Bear = Animal & { 
+  honey: boolean;
+}
+
+interfaces can be changed and added too
+
+Prior to TypeScript version 4.2, type alias names may appear in error messages, sometimes in place of the equivalent anonymous type (which may or may not be desirable). Interfaces will always be named in error messages.
+Type aliases may not participate in declaration merging, but interfaces can.
+Interfaces may only be used to declare the shapes of objects, not rename primitives.
+Interface names will always appear in their original form in error messages, but only when they are used by name.
+For the most part, you can choose based on personal preference, and TypeScript will tell you if it needs something to be the other kind of declaration. If you would like a heuristic, use interface until you need to use features from type.
