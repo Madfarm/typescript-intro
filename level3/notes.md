@@ -83,3 +83,12 @@ Type aliases may not participate in declaration merging, but interfaces can.
 Interfaces may only be used to declare the shapes of objects, not rename primitives.
 Interface names will always appear in their original form in error messages, but only when they are used by name.
 For the most part, you can choose based on personal preference, and TypeScript will tell you if it needs something to be the other kind of declaration. If you would like a heuristic, use interface until you need to use features from type.
+
+
+
+We can define values literally like
+let x: 6 = 6;
+
+and they can be unionized
+
+let x: 6 | 7 | 8 = 7;

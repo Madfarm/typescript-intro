@@ -53,4 +53,7 @@ function learnCat(cat: Cat): Cat{
 }
 
 
-console.log(learnCat(manny))
+// console.log(learnCat(manny))
+
+
+let litNum: 6 | 7 | 8 = 6;
