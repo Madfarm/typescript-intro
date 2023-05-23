@@ -50,3 +50,14 @@ this is not valid code because numbers don't have toUpperCase()
 
 to properly use that method, we'll have to check for which type the argument is before attempting the operation
 
+## Type Aliases
+A name for any type - resuable types
+syntax is the keyword type then name = type
+
+type name = String;
+
+
+## Interfaces
+
+
+

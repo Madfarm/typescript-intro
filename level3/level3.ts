@@ -20,7 +20,7 @@
 
 
 
-function letsGooTest(x: number | String): void {
+function letsGooTest(x: number | string): void {
 
     if (typeof x == "string") console.log(x.toUpperCase())
     else console.log(x)
@@ -28,3 +28,12 @@ function letsGooTest(x: number | String): void {
 
 // letsGooTest(22)
 // letsGooTest("ASdjWdjfdfsdfsRERfdf")
+
+
+type name =  string;
+
+function printName(str: name): name {
+    return str
+}
+
+// console.log(printName("catty"))
